@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind + Vite</title>
+  <!--   <link rel="icon" href="src/icon/Group 1.png" /> -->
+     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMyIgZmlsbD0iI2Q3ZWIyZCIvPgo8dGV4dCB4PSI0IiB5PSIxMiIgc3R5bGU9ImZpbGw6I2ZmZjtmb250LXNpemU6MTA7Zm9udC1mYW1pbHk6QXJpYWw7Zm9udC13ZWlnaHQ6Ym9sZDsiPkI8L3RleHQ+Cjwvc3ZnPg==" />
+
+    <link rel="stylesheet" crossorigin href="./assets/index-C8v_uRAe.css">
+  </head>
+  <body>
+    <header
+      class="bg-white py-4 px-6 flex justify-between items-center shadow-md sticky top-0 z-50"
+    >
+      <a href="#" class="hover:text-blue-700 font-extrabold text-2xl">Treact</a>
+
+      <!-- Desktop Menu -->
+      <nav
+        id="menu"
+        class="space-x-6 hidden md:flex font-semibold text-gray-700"
+      >
+        <a href="index.html" class="group relative hover:text-blue-700">
+          Home
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="blog.html" class="group relative hover:text-blue-700">
+          Blog
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="ht.html" class="group relative hover:text-blue-700">
+          Pricing
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="#" class="group relative hover:text-blue-700">
+          Contact Us
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="#" class="group relative hover:text-blue-700">
+          Login
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="#" class="group relative hover:text-blue-700">
+          Sign Up
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+        &#9776;
+      </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav
+      id="mobile-menu"
+      class="hidden bg-white px-6 py-4 space-y-3 md:hidden font-semibold text-gray-700"
+    >
+      <a href="index.html" class="block hover:text-blue-700">Home</a>
+      <a href="blog.html" class="block hover:text-blue-700">Blog</a>
+      <a href="ht.html" class="block hover:text-blue-700">Pricing</a>
+      <a href="#" class="block hover:text-blue-700">Contact Us</a>
+      <a href="#" class="block hover:text-blue-700">Login</a>
+      <a href="#" class="block hover:text-blue-700">Sign Up</a>
+    </nav>
+
+    <main class="container mx-auto px-4">
+      <!-- HERO SECTION -->
+      <section class="bg-gray-100 py-20 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+          <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
+            Unlock Daily Insights & Creative Stories
+          </h1>
+          <p class="text-lg md:text-xl text-gray-600 mb-6">
+            Discover trending tech, design tips, and development tutorials. A
+            blog made for curious minds.
+          </p>
+          <a
+            href="#blogs"
+            class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition"
+          >
+            ✨ Read Latest Posts
+          </a>
+        </div>
+      </section>
+      <!-- Hero Section End -->
+
+      <!-- SERVING SECTION -->
+
+      <div class="bg-white py-16 px-4">
+        <h1 class="text-2xl font-bold mb-6">
+          Weekly Articles with insight into the weekend's message
+        </h1>
+        <div
+          class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+        >
+          <!-- Card Start -->
+          <div
+            class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md"
+          >
+            <img
+              src="./assets/blog-1-D6lPe61g.jpg"
+              class="w-full h-[160px] sm:h-[240px] object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2 hover:text-blue-700">
+                Redeeming Our Regrets
+              </h2>
+              <p class="text-gray-600 text-sm">August 15, 2022</p>
+              <a href="#" class="text-blue-700 from-bold"
+                >VIEW THESE RESOURCES</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md"
+          >
+            <img
+              src="./assets/blog-2-q9J4P6za.jpg"
+              class="w-full h-[160px] sm:h-[240px] object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-base font-bold mb-2 hover:text-blue-700">
+                Combatting Complacency So I Press On Toward All God Has For Me
+              </h2>
+              <p class="text-gray-600 text-sm">August 15, 2022</p>
+              <a href="#" class="text-blue-700 from-bold"
+                >VIEW THESE RESOURCES</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md"
+          >
+            <img
+              src="./assets/blog-3-CBKboE-k.jpg"
+              class="w-full h-[160px] sm:h-[240px] object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2 hover:text-blue-700">
+                3 Ways to Express Affirmation to Others (But Especially Your
+                Kids!)
+              </h2>
+              <p class="text-gray-600 text-sm">August 15, 2022</p>
+              <a href="#" class="text-blue-700 from-bold"
+                >VIEW THESE RESOURCES</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md"
+          >
+            <img
+              src="./assets/blog-4-BHKqsMoC.jpg"
+              class="w-full h-[160px] sm:h-[240px] object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2 hover:text-blue-700">
+                What We Can Learn from the Liturgy of Seasons
+              </h2>
+              <p class="text-gray-600 text-sm">August 15, 2022</p>
+              <a href="#" class="text-blue-700 from-bold"
+                >VIEW THESE RESOURCES</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md"
+          >
+            <img
+              src="./assets/blog-5-CK_DpybQ.webp"
+              class="w-full h-[160px] sm:h-[240px] object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2 hover:text-blue-700">
+                What the Wind and the Holy Spirit Have in Common (and Why it
+                Matters!)
+              </h2>
+              <p class="text-gray-600 text-sm">August 15, 2022</p>
+              <a href="#" class="text-blue-700 from-bold"
+                >VIEW THESE RESOURCES</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md"
+          >
+            <img
+              src="./assets/blog-6-DAq5uC0n.jpg"
+              class="w-full h-[160px] sm:h-[240px] object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2 hover:text-blue-700">
+                5 Things You Can Do TODAY to Improve Your Communication!
+              </h2>
+              <p class="text-gray-600 text-sm">August 15, 2022</p>
+              <a href="#" class="text-blue-700 from-bold"
+                >VIEW THESE RESOURCES</a
+              >
+            </div>
+          </div>
+          <div
+            class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md"
+          >
+            <img
+              src="./assets/blog-7-Hkzunc2s.webp"
+              class="w-full h-[160px] sm:h-[240px] object-cover"
+            />
+            <div class="p-4">
+              <h2 class="text-lg font-bold mb-2 hover:text-blue-700">
+                What do you do when your wine runs out?
+              </h2>
+              <p class="text-gray-600 text-sm">August 15, 2022</p>
+              <a href="#" class="text-blue-700 from-bold"
+                >VIEW THESE RESOURCES</a
+              >
+            </div>
+          </div>
+          <!-- Card End -->
+        </div>
+      </div>
+    </main>
+    <script src="src/main.js"></script>
+
+    <!-- Footer Start -->
+    <footer class="container mx-auto bg-white sm:px-6 lg:px-8 py-16 px-4">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+      >
+        <!-- Main Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Main</h3>
+          <ul class="space-y-2 text-sm font-semibold">
+            <li><a href="#" class="hover:text-green-500">Blog</a></li>
+            <li><a href="#" class="hover:text-green-500">FAQs</a></li>
+            <li><a href="#" class="hover:text-green-500">Support</a></li>
+            <li><a href="#" class="hover:text-green-500">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Product Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Product</h3>
+          <ul class="space-y-2 text-sm font-semibold">
+            <li><a href="#" class="hover:text-green-500">Log In</a></li>
+            <li><a href="#" class="hover:text-green-500">Personal</a></li>
+            <li><a href="#" class="hover:text-green-500">Business</a></li>
+            <li><a href="#" class="hover:text-green-500">Team</a></li>
+          </ul>
+        </div>
+
+        <!-- Press Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Press</h3>
+          <ul class="space-y-2 text-sm font-semibold">
+            <li><a href="#" class="hover:text-green-500">Logos</a></li>
+            <li><a href="#" class="hover:text-green-500">Events</a></li>
+            <li><a href="#" class="hover:text-green-500">Stories</a></li>
+            <li><a href="#" class="hover:text-green-500">Office</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Legal</h3>
+          <ul class="space-y-2 text-sm font-semibold">
+            <li><a href="#" class="hover:text-green-500">GDPR</a></li>
+            <li><a href="#" class="hover:text-green-500">Privacy Policy</a></li>
+            <li>
+              <a href="#" class="hover:text-green-500">Terms of Service</a>
+            </li>
+            <li><a href="#" class="hover:text-green-500">Disclaimer</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Newsletter -->
+        <div>
+          <h3 class="text-lg font-semibold mb-4">
+            Subscribe to our Newsletter
+          </h3>
+          <ul class="text-sm font-semibold space-y-3">
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">📞</span> 666 888 0000
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">✉️</span> needhelp@company.com
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-500 mr-2">📍</span> 80 Broklyn Golden
+              Street Line, New York, USA
+            </li>
+          </ul>
+          <form class="mt-4 flex w-full max-w-xs">
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              class="px-4 py-2 rounded-l bg-white text-black w-full focus:outline-none"
+              required
+            />
+            <button
+              type="submit"
+              class="bg-green-500 text-white px-4 rounded-r hover:bg-green-600"
+            >
+              📩
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div
+        class="border-t border-gray-300 mt-10 pt-6 text-sm flex flex-col md:flex-row items-center md:items-start justify-between gap-3 md:text-left text-center"
+      >
+        <p>© All Copyright 2025 by shawonetc Themes</p>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-green-500">Terms of Use</a>
+          <a href="#" class="hover:text-green-500">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

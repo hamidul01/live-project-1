@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind + Vite</title>
+    <link rel="icon" href="./assets/food-QwSEmUHz.webp">
+    <link rel="stylesheet" crossorigin href="./assets/index-C8v_uRAe.css">
+  </head>
+  <body>
+    <header
+      class="bg-white py-4 px-6 flex justify-between items-center shadow-md sticky top-0 z-50"
+    >
+      <a href="#" class="hover:text-blue-700 font-extrabold text-2xl">Treact</a>
+
+      <!-- Desktop Menu -->
+      <nav
+        id="menu"
+        class="space-x-6 hidden md:flex font-semibold text-gray-700"
+      >
+        <a href="index.html" class="group relative hover:text-blue-700">
+          Home
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="blog.html" class="group relative hover:text-blue-700">
+          Blog
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="ht.html" class="group relative hover:text-blue-700">
+          Pricing
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="#" class="group relative hover:text-blue-700">
+          Contact Us
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="navtest.html" class="group relative hover:text-blue-700">
+          Login
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+        <a href="#" class="group relative hover:text-blue-700">
+          Sign Up
+          <span
+            class="absolute left-0 -bottom-1 h-0.5 w-0 bg-blue-900 transition-all duration-300 group-hover:w-full"
+          ></span>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+        &#9776;
+      </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav
+      id="mobile-menu"
+      class="hidden bg-white px-6 py-4 space-y-3 md:hidden font-semibold text-gray-700"
+    >
+      <a href="index.html" class="block hover:text-blue-700">Home</a>
+      <a href="blog.html" class="block hover:text-blue-700">Blog</a>
+      <a href="ht.html" class="block hover:text-blue-700">Pricing</a>
+      <a href="#" class="block hover:text-blue-700">Contact Us</a>
+      <a href="navtest.html" class="block hover:text-blue-700">Login</a>
+      <a href="#" class="block hover:text-blue-700">Sign Up</a>
+    </nav>
+
+    <main class="container mx-auto px-4">
+      <!-- HERO SECTION -->
+      <div class="bg-white-100 py-16">
+        <div
+          class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center"
+        >
+          <!-- Text content -->
+          <div class="md:w-1/2 text-center mx-3 md:text-left mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-3xl font-bold my-3 mb-4">
+              Delicious & Affordable
+            </h1>
+            <h1
+              class="inline-block italic text-4xl md:text-3xl font-bold my-3 mb-4 bg-blue-700 text-white"
+            >
+              Meals Near You.
+            </h1>
+            <p class="text-lg text-gray-700 md:ml-1 mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button
+              class="bg-blue-600 text-white px-6 py-3 font-medium rounded-lg hover:bg-blue-700 transition"
+            >
+              Get Started
+            </button>
+          </div>
+
+          <!-- Image content -->
+          <div class="md:w-1/2">
+            <img
+              src="./assets/img-1-DI-raHIt.avif"
+              alt="Hero Image"
+              class="w-full rounded-[40px] shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- SERVING SECTION -->
+
+     <div class="bg-white py-16">
+  <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
+    
+    <!-- Image Section -->
+    <div class="w-full md:w-1/2">
+      <img
+        src="./assets/img-2-4PMtOHgW.avif"
+        alt="Hero Image"
+        class="w-full rounded-[40px] shadow-lg md:h-96 min-w-60"
+      />
+    </div>
+
+    <!-- Text Section -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h1 class="text-blue-800 font-medium text-xl md:text-base">Established Since 2014</h1>
+
+      <h1 class="text-3xl md:text-4xl font-bold my-2 leading-tight">
+        We've been serving for</h1>
+        <h1 class="bg-blue-800 italic p-2 text-white inline-block text-3xl md:text-4xl font-bold my-4 leading-tight rounded">
+          over 5 years.
+        </h1>
+      
+
+      <p class="text-base md:text-lg text-gray-700 mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p class="text-base md:text-lg text-gray-700">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <button class="bg-blue-700 text-white mt-6 px-6 font-medium py-2 rounded-lg hover:bg-blue-900 transition">Latest Offers</button>
+
+    </div>
+
+  </div>
+    </div>
+
+<!-- Checkout our menu. -->
+
+ <div class="bg-white py-16 px-4">
+       <h1 class="text-5xl font-black mb-6">Checkout our <span class="bg-blue-800 italic p-2 text-white inline-block text-3xl md:text-4xl font-bold my-4 leading-tight rounded">menu.</span></h1>
+  <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- Card Start -->
+    <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white  px-4 py-2 sm:text-base rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+        <div class="bg-white rounded-lg overflow-hidden hover:shadow-lg hover:scale-105 hover:border-blue-500 border border-transparent shadow-md">
+      <img src="./assets/img-1-DI-raHIt.avif" class="w-full h-[160px] sm:h-[240px] object-cover">
+      <div class="p-4">
+        <h2 class="text-lg font-bold mb-2 hover:text-blue-700">Veg Mixer</h2>
+        <p class="text-gray-600 text-sm font-semibold">Short description goes here.</p>
+        <p class="text-lg font-bold text-green-600 mb-2">$49.99</p>
+         <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</button>
+      </div>
+    </div>
+    <!-- Card End -->
+
+  </div>
+</div>
+
+
+</main>
+
+
+  <script src="src/main.js"></script>
+
+
+<!-- Footer Start -->
+<footer class="bg-white sm:px-6 lg:px-8 py-16 px-4">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+
+    <!-- Main Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Main</h3>
+      <ul class="space-y-2 text-sm font-semibold">
+        <li><a href="#" class="hover:text-green-500">Blog</a></li>
+        <li><a href="#" class="hover:text-green-500">FAQs</a></li>
+        <li><a href="#" class="hover:text-green-500">Support</a></li>
+        <li><a href="#" class="hover:text-green-500">About Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Product Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Product</h3>
+      <ul class="space-y-2 text-sm font-semibold">
+        <li><a href="#" class="hover:text-green-500">Log In</a></li>
+        <li><a href="#" class="hover:text-green-500">Personal</a></li>
+        <li><a href="#" class="hover:text-green-500">Business</a></li>
+        <li><a href="#" class="hover:text-green-500">Team</a></li>
+      </ul>
+    </div>
+
+    <!-- Press Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Press</h3>
+      <ul class="space-y-2 text-sm font-semibold">
+        <li><a href="#" class="hover:text-green-500">Logos</a></li>
+        <li><a href="#" class="hover:text-green-500">Events</a></li>
+        <li><a href="#" class="hover:text-green-500">Stories</a></li>
+        <li><a href="#" class="hover:text-green-500">Office</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal Links -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Legal</h3>
+      <ul class="space-y-2 text-sm font-semibold">
+        <li><a href="#" class="hover:text-green-500">GDPR</a></li>
+        <li><a href="#" class="hover:text-green-500">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-green-500">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-green-500">Disclaimer</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Newsletter -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">Subscribe to our Newsletter</h3>
+      <ul class="text-sm font-semibold space-y-3">
+        <li class="flex items-start"><span class="text-green-500 mr-2">📞</span> 666 888 0000</li>
+        <li class="flex items-start"><span class="text-green-500 mr-2">✉️</span> needhelp@company.com</li>
+        <li class="flex items-start"><span class="text-green-500 mr-2">📍</span> 80 Broklyn Golden Street Line, New York, USA</li>
+      </ul>
+      <form class="mt-4 flex w-full max-w-xs">
+        <input type="email" placeholder="Your Email Address"
+               class="px-4 py-2 rounded-l bg-white text-black w-full focus:outline-none" required />
+        <button type="submit" class="bg-green-500 text-white px-4 rounded-r hover:bg-green-600">📩</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="border-t border-gray-300 mt-10 pt-6 text-sm flex flex-col md:flex-row items-center md:items-start justify-between gap-3 md:text-left text-center">
+    <p>© All Copyright 2025 by shawonetc Themes</p>
+    <div class="space-x-4">
+      <a href="#" class="hover:text-green-500">Terms of Use</a>
+      <a href="#" class="hover:text-green-500">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
