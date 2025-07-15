@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         blog: resolve(__dirname, 'blog.html'),
+        maine: resolve(__dirname, 'src/main.js'),
       },
     },
   },
